@@ -12,7 +12,7 @@ import './Beams.css';
 function extendMaterial(BaseMaterial: typeof THREE.MeshStandardMaterial, cfg: any) {
   const physical = THREE.ShaderLib.physical;
   const { vertexShader: baseVert, fragmentShader: baseFrag, uniforms: baseUniforms } = physical;
-  const baseDefines = physical.defines ?? {};
+  const baseDefines = (physical as any).defines ?? {};
 
   const uniforms = THREE.UniformsUtils.clone(baseUniforms);
 

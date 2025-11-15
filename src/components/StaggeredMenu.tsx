@@ -39,7 +39,7 @@ export const StaggeredMenu = ({
   displaySocials = false,
   displayItemNumbering = true,
   className,
-  logoUrl,
+  logoUrl: _logoUrl,
   menuButtonColor = '#fff',
   openMenuButtonColor = '#fff',
   accentColor = '#5227FF',

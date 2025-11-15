@@ -1,5 +1,5 @@
 import { useRef } from 'react'
-import { motion, useMotionValue, useSpring } from 'framer-motion'
+import { motion, useSpring } from 'framer-motion'
 
 interface StudioCardProps {
   children: React.ReactNode
