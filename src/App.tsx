@@ -109,9 +109,9 @@ function App() {
         </section>
 
         {/* About Architect Section */}
-        <section id="about" className="py-20 sm:py-28 md:py-36 lg:py-40 relative">
+        <section id="about" className="py-12 sm:py-16 md:py-20 lg:py-24 relative">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 lg:px-12">
-            <div className="mb-12 sm:mb-16 md:mb-20 lg:mb-24 text-center">
+            <div className="mb-8 sm:mb-10 md:mb-12 lg:mb-14 text-center">
               <ArchitecturalText variant="h1" className="text-white -mt-[5px]">
                 About
               </ArchitecturalText>
@@ -188,9 +188,9 @@ function App() {
         </section>
 
         {/* Projects Section */}
-        <section id="projects" className="py-20 sm:py-28 md:py-36 lg:py-40 relative">
+        <section id="projects" className="py-12 sm:py-16 md:py-20 lg:py-24 relative">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 lg:px-12">
-            <div className="mb-12 sm:mb-16 md:mb-20 lg:mb-24 text-center">
+            <div className="mb-8 sm:mb-10 md:mb-12 lg:mb-14 text-center">
               <ArchitecturalText variant="h1" className="text-white">
                 Projects
               </ArchitecturalText>
@@ -233,9 +233,9 @@ function App() {
         </section>
 
         {/* Studio Section */}
-        <section id="studio" className="py-20 sm:py-28 md:py-36 lg:py-40 relative">
+        <section id="studio" className="py-12 sm:py-16 md:py-20 lg:py-24 relative">
           <div className="max-w-6xl mx-auto px-4 sm:px-6 md:px-8 lg:px-12">
-            <div className="mb-12 sm:mb-16 md:mb-20 lg:mb-24 text-center">
+            <div className="mb-8 sm:mb-10 md:mb-12 lg:mb-14 text-center">
               <ArchitecturalText variant="h1" className="text-white">
                 Studio
               </ArchitecturalText>
@@ -312,10 +312,10 @@ function App() {
         </section>
 
         {/* Contact Section */}
-        <section id="contact" className="py-20 sm:py-28 md:py-36 lg:py-40 relative">
+        <section id="contact" className="py-12 sm:py-16 md:py-20 lg:py-24 relative">
           <div className="max-w-5xl mx-auto px-4 sm:px-6 md:px-8 lg:px-12">
             {/* Header */}
-            <div className="mb-12 sm:mb-16 md:mb-20 lg:mb-24 text-center">
+            <div className="mb-8 sm:mb-10 md:mb-12 lg:mb-14 text-center">
               <ArchitecturalText variant="h1" className="text-white mb-4 sm:mb-6">
                 Contact
               </ArchitecturalText>
