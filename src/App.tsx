@@ -72,8 +72,8 @@ function App() {
           {/* Navigation in Hero Section */}
           <Navigation />
           
-          {/* Hero Content - Fixed at Top */}
-          <div className="absolute top-0 left-0 right-0 z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 md:px-8 lg:px-12 text-center pt-20 sm:pt-24 md:pt-28 lg:pt-32">
+          {/* Hero Content - Centered */}
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 md:px-8 lg:px-12 text-center">
             <ArchitecturalText variant="h1" className="text-white mb-3 sm:mb-4 leading-[0.9]">
               Architectural
               <br />
@@ -84,7 +84,7 @@ function App() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4, duration: 0.8 }}
-              className="text-base sm:text-lg text-white/90 max-w-2xl mx-auto px-4"
+              className="text-base sm:text-lg text-white/90 max-w-2xl mx-auto"
             >
               Modern design inspired by contemporary architecture.
               <br className="hidden sm:block" />
