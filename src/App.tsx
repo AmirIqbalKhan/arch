@@ -73,7 +73,7 @@ function App() {
           <Navigation />
           
           {/* Hero Content - Fixed at Top */}
-          <div className="absolute top-0 left-0 right-0 z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 text-center pt-20 sm:pt-24 md:pt-32">
+          <div className="absolute top-0 left-0 right-0 z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 md:px-8 lg:px-12 text-center pt-20 sm:pt-24 md:pt-28 lg:pt-32">
             <ArchitecturalText variant="h1" className="text-white mb-3 sm:mb-4 leading-[0.9]">
               Architectural
               <br />
@@ -94,7 +94,7 @@ function App() {
           </div>
 
           {/* Curved Loop Animation - At Absolute Bottom */}
-          <div className="absolute bottom-0 left-0 right-0 z-20 w-full px-4 sm:px-6 pb-4 sm:pb-6">
+          <div className="absolute bottom-0 left-0 right-0 z-20 w-full px-4 sm:px-6 md:px-8 lg:px-12 pb-4 sm:pb-6 md:pb-8">
             <div className="max-w-6xl mx-auto">
               <CurvedLoop
                 marqueeText="Design ✦ Innovation ✦ Craftsmanship ✦ Sustainability ✦ Excellence ✦"
@@ -109,15 +109,15 @@ function App() {
         </section>
 
         {/* About Architect Section */}
-        <section id="about" className="py-16 sm:py-24 md:py-32 relative">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6">
-            <div className="mb-12 sm:mb-16 md:mb-20 text-center">
+        <section id="about" className="py-20 sm:py-28 md:py-36 lg:py-40 relative">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 lg:px-12">
+            <div className="mb-12 sm:mb-16 md:mb-20 lg:mb-24 text-center">
               <ArchitecturalText variant="h1" className="text-white -mt-[5px]">
                 About
               </ArchitecturalText>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-12 md:gap-16">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 md:gap-10 lg:gap-12">
               {/* Architect Image with Tilted Card */}
               <div className="relative flex justify-center md:justify-center md:pl-8 h-[300px] sm:h-[350px] md:h-[400px]">
                 <div className="w-full max-w-sm h-full">
@@ -188,16 +188,16 @@ function App() {
         </section>
 
         {/* Projects Section */}
-        <section id="projects" className="py-16 sm:py-24 md:py-32 relative">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6">
-            <div className="mb-12 sm:mb-16 md:mb-20 text-center">
+        <section id="projects" className="py-20 sm:py-28 md:py-36 lg:py-40 relative">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 lg:px-12">
+            <div className="mb-12 sm:mb-16 md:mb-20 lg:mb-24 text-center">
               <ArchitecturalText variant="h1" className="text-white">
                 Projects
               </ArchitecturalText>
             </div>
 
             {/* Blueprint-style Grid */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 md:gap-10 lg:gap-12">
               {projects.map((project) => (
                 <div key={project.slug} className="h-[300px] sm:h-[350px] md:h-[400px]">
                   <TiltedCard
@@ -233,16 +233,16 @@ function App() {
         </section>
 
         {/* Studio Section */}
-        <section id="studio" className="py-16 sm:py-24 md:py-32 relative">
-          <div className="max-w-6xl mx-auto px-4 sm:px-6">
-            <div className="mb-12 sm:mb-16 md:mb-20 text-center">
+        <section id="studio" className="py-20 sm:py-28 md:py-36 lg:py-40 relative">
+          <div className="max-w-6xl mx-auto px-4 sm:px-6 md:px-8 lg:px-12">
+            <div className="mb-12 sm:mb-16 md:mb-20 lg:mb-24 text-center">
               <ArchitecturalText variant="h1" className="text-white">
                 Studio
               </ArchitecturalText>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8" style={{ perspective: '1000px' }}>
-              <StudioCard delay={0.1} className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg p-6 sm:p-8 h-full flex flex-col">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 md:gap-10 lg:gap-12" style={{ perspective: '1000px' }}>
+              <StudioCard delay={0.1} className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg p-6 sm:p-8 md:p-10 h-full flex flex-col">
                 <h2 className="text-xl sm:text-2xl font-display font-semibold mb-4 sm:mb-6 text-white">
                   Philosophy
                 </h2>
@@ -267,7 +267,7 @@ function App() {
                 </div>
               </StudioCard>
 
-              <StudioCard delay={0.2} className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg p-6 sm:p-8 h-full flex flex-col">
+              <StudioCard delay={0.2} className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg p-6 sm:p-8 md:p-10 h-full flex flex-col">
                 <h2 className="text-xl sm:text-2xl font-display font-semibold mb-4 sm:mb-6 text-white">
                   Approach
                 </h2>
@@ -312,10 +312,10 @@ function App() {
         </section>
 
         {/* Contact Section */}
-        <section id="contact" className="py-16 sm:py-24 md:py-32 relative">
-          <div className="max-w-5xl mx-auto px-4 sm:px-6">
+        <section id="contact" className="py-20 sm:py-28 md:py-36 lg:py-40 relative">
+          <div className="max-w-5xl mx-auto px-4 sm:px-6 md:px-8 lg:px-12">
             {/* Header */}
-            <div className="mb-12 sm:mb-16 md:mb-20 text-center">
+            <div className="mb-12 sm:mb-16 md:mb-20 lg:mb-24 text-center">
               <ArchitecturalText variant="h1" className="text-white mb-4 sm:mb-6">
                 Contact
               </ArchitecturalText>
@@ -330,7 +330,7 @@ function App() {
               </motion.p>
             </div>
 
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 sm:gap-10 lg:gap-12">
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8 md:gap-10 lg:gap-12">
               {/* Contact Form */}
               <motion.div
                 initial={{ opacity: 0, y: 30 }}
@@ -339,7 +339,7 @@ function App() {
                 transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
                 className="lg:col-span-2"
               >
-                <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg p-6 sm:p-8 lg:p-12">
+                <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg p-6 sm:p-8 md:p-10 lg:p-12">
                   <ContactForm />
                 </div>
               </motion.div>
@@ -350,9 +350,9 @@ function App() {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true, margin: '-100px' }}
                 transition={{ duration: 0.8, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-                className="space-y-6 sm:space-y-8"
+                className="space-y-6 sm:space-y-8 md:space-y-10"
               >
-                <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg p-6 sm:p-8">
+                <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg p-6 sm:p-8 md:p-10">
                   <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
