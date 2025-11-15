@@ -50,7 +50,7 @@ const projects = [
 function App() {
   return (
     <>
-      <div className="fixed inset-0 -z-10 w-screen h-screen">
+      <div className="fixed inset-0 -z-10 w-full h-full overflow-hidden">
         <Beams
           beamWidth={3}
           beamHeight={30}
@@ -94,8 +94,8 @@ function App() {
           </div>
 
           {/* Curved Loop Animation - At Absolute Bottom */}
-          <div className="absolute bottom-0 left-0 right-0 z-20 w-full px-4 sm:px-6 md:px-8 lg:px-12 pb-4 sm:pb-6 md:pb-8">
-            <div className="max-w-6xl mx-auto">
+          <div className="absolute bottom-0 left-0 right-0 z-20 w-full px-4 sm:px-6 md:px-8 lg:px-12 pb-6 sm:pb-6 md:pb-8">
+            <div className="max-w-6xl mx-auto w-full">
               <CurvedLoop
                 marqueeText="Design ✦ Innovation ✦ Craftsmanship ✦ Sustainability ✦ Excellence ✦"
                 speed={2}
